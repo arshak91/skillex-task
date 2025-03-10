@@ -34,18 +34,22 @@ $ npm run dev
 ```
 
 ## API
-```json
-/generate, POST
+```javascript
+// /generate, POST
 
-body: {
-  "items": [2,1,3],
-  "length": 2  // 3, 4 ...
+{
+  body: {
+    "items": [2,1,3],
+    "length": 2  // 3, 4 ...
+  }
 }
 
-response: {
-  "id": 1,
-  "combination": [
-    [A1, B1], [A1, C1], [A1, C2], ...
-  ]
+{
+  response: {
+    "id": 1,
+    "combination": [
+      [A1, B1], [A1, C1], [A1, C2], ...
+    ]
+  }
 }
 ```
